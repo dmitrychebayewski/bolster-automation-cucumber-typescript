@@ -1,4 +1,4 @@
-export interface MenuNavigationDescriptor {
+export type MenuNavigationDescriptor = {
     menuItem: string;
     subMenuItem?: string;
 }
