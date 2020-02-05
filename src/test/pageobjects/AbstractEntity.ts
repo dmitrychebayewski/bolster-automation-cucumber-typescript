@@ -1,4 +1,4 @@
-import {WebElement} from "src/test/pageobjects/components/WebElement";
+import {WebElement} from "src/test/wrapper/WebElement";
 
 export abstract class AbstractEntity {
     protected abstract getSearchContext():string;
