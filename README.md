@@ -1,7 +1,8 @@
 # bs-testautomation-demo
 A small framework for corporate site testing written in Node.js/TypeScript, using WebdriverIO and Cucumber.
 The POC is short scenario, which is going to a corporate web, 
-navigating to "About us" page and downloads the pictures of key speakers.
+navigating to "About us" page and then downloading the pictures of key speakers at ${project.directory}/target/
+path.
 
 ## Software Stack
 This project uses Node.js, TypeScript, Cucumber-JS 5 and WebdriverIO 5.
