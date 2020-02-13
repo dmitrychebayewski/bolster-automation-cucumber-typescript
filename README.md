@@ -5,11 +5,7 @@ navigating to "About us" page and then downloading the pictures of key speakers 
 path.
 
 ## Software Stack
-This project uses Node.js, TypeScript, Cucumber-JS 5 and WebdriverIO 5.
-
-## Web Driver Setup
-This project uses selenium-standalone library for launching Selenium with WebDrivers support,
-to interact with the Chrome web browser.
+This project uses Node.js, TypeScript, Cucumber-JS 5, WebdriverIO 5 and docker-compose
 
 ## IDE
 This project was created in WebStorm, 
@@ -27,8 +23,10 @@ In order to navigate from .feature files to steps definitions,
 
 ## Running Tests
 This project uses [npm](https://nodejs.org/).
-Run tests using the following command: "npm run test".
-
+Run tests using the following command: 
+```
+$npm run test
+```
 ## Cucumber Report
 ### Default console reporter
 The default reporter is "dot". 
