@@ -35,3 +35,16 @@ The default reporter is "dot".
 ### Cucumber report
 When the tests are executed, the default html Cucumber report can be found at:
 ${project.directory}/target/generated-report
+
+## Docker (optional)
+The project uses selenium hub and selenium grid solution to provide the tests execution in the isolated environments 
+in docker container.
+To run the tests in isolated environments, you can use provided docker-compose file 
+and the following commands:
+```
+$docker-compose up
+```
+or
+```
+$docker-compose up --build
+```
