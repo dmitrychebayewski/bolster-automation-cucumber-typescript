@@ -28,7 +28,7 @@ In order to navigate from .feature files to steps definitions,
 This project uses [yarn](https://classic.yarnpkg.com/).
 Run tests using the following command: 
 ```
-$npm run test
+$yarn test
 ```
 ## Cucumber Report
 ### Default console reporter
