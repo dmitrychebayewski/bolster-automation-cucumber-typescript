@@ -6,8 +6,6 @@ services:
       - bolstertest
     depends_on:
      - selenium-hub
-    volumes:
-     - .:/usr/src/app
 
   selenium-hub:
     image: selenium/hub:3.141.59-zinc

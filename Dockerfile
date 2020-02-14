@@ -10,7 +10,8 @@ COPY ./*.json ./
 #Install jq
 RUN apt-get update
 RUN apt-get install jq --assume-yes
-RUN npm install
+RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+RUN yarn install
 # If you are building your code for production
 # RUN npm ci --only=production
 
