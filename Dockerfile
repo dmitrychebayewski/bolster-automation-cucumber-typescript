@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY ./*.json ./
 
+#Install jq
+RUN apt-get update
+RUN apt-get install jq --assume-yes
 RUN npm install
 # If you are building your code for production
 # RUN npm ci --only=production
@@ -14,7 +17,6 @@ RUN npm install
 # Bundle app source
 COPY ./src ./src
 COPY ./*.js ./
+COPY ./wait-for-grid.sh ./
 
-CMD [ "npm", "test" ]
-#CMD ["java", "-version"]
-#CMD ["google-chrome", "--version"]
+CMD ./wait-for-grid.sh && npm test
