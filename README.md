@@ -25,10 +25,10 @@ In order to navigate from .feature files to steps definitions,
 
 
 ## Running Tests
-This project uses [npm](https://nodejs.org/).
+This project uses [yarn](https://classic.yarnpkg.com/).
 Run tests using the following command: 
 ```
-$npm run test
+$yarn test
 ```
 ## Cucumber Report
 ### Default console reporter
