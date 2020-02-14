@@ -21,6 +21,9 @@ features/download-key-bolster-speakers-en_US.feature
 In order to navigate from .feature files to steps definitions,
 [Cucumber.js ](https://plugins.jetbrains.com/search?search=Cucumber) IDE plugin should be installed.
 
+## Architecture
+
+
 ## Running Tests
 This project uses [npm](https://nodejs.org/).
 Run tests using the following command: 
@@ -34,7 +37,16 @@ The default reporter is "dot".
 When the tests are executed, the default html Cucumber report can be found at:
 ${project.directory}/target/generated-report
 
-## Docker (optional)
+## Docker
+This project is packaged for Docker only.
+If you need to run the project locally, please comment the following line in wdio.conf.js:
+```
+//hostname: 'selenium-hub',
+```
+and also please install 'selenium-standalone' using the command:
+```
+$yarn add selenium-standalone --dev
+```
 The project uses selenium hub and selenium grid solution to provide the tests execution in the isolated environments 
 in docker container.
 To run the tests in isolated environments, you can use provided docker-compose file 
@@ -45,4 +57,11 @@ $docker-compose up
 or
 ```
 $docker-compose up --build
+```
+
+### Using a bash script to wait for the Grid
+A common problem known in docker is that a running container does not always mean that the application inside 
+it is ready. The following script is an example of how this can be done using bash.
+```
+./wait-for-grid.sh
 ```
